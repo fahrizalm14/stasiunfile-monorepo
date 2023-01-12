@@ -1,0 +1,29 @@
+name: 🚧 FEATURE REQUEST
+description: Ajukan Permintaan Fitur
+title: "[FEATURE REQUEST]: <title>"
+labels: ["FEATURE 🚩", "Status: ToDo"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Nama Fitur
+      description: Masukan nama fitur yang kamu inginkan
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Jelaskan fitur yang kamu inginkan
+      description: Berikan deskripsi yang jelas dan ringkas tentang apa yang kamu inginkan terjadi
+    validations:
+      required: true
+
+  - type: textarea
+    id: further
+    attributes:
+      label: Informasi lebih lanjut
+      description: |
+        Harap berikan tautan, referensi, tangkapan layar, atau apa pun yang akan memberi kami lebih banyak konteks tentang masalah kamu
+
+        Tips: kamu dapat melampirkan gambar atau file log dengan mengeklik area ini untuk menyorotnya, lalu menyeret file masuk
