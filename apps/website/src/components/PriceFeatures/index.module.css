@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
 .wrapper {
-  max-width: 1090px;
+  /* max-width: 1090px; */
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 .wrapper .table {
@@ -33,7 +32,7 @@
   position: relative;
 }
 .priceArea .innerArea .text {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 400;
   position: absolute;
   top: -10px;
