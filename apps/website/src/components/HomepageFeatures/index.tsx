@@ -27,7 +27,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Kamu dapat membuat url sesuai yang kamu inginkan, dengan format seperti ini{" "}
-        <code className="text-italic">https://sf.site/[teks-kustom]</code> agar lebih mudah lagi
+        <code className="text-italic">https://sif.id/[teks-kustom]</code> agar lebih mudah lagi
         untuk di Bagikan.
       </>
     ),
@@ -110,7 +110,7 @@ export default function HomepageFeatures(): JSX.Element {
               inginkan. Sangat <span className="purple-text text-italic">cocok</span> untuk kamu
               yang sering memakan waktu buka{" "}
               <span className="purple-text text-italic">whatsapp web</span> hanya untuk mengirim
-              file ke handphone.
+              file ke handphone. Atau anda ingin mendapatkan fitur yang lebih lengkap dan super inovatif hanya dengan syarat gabung dengan kami.
             </p>
             <button className={clsx("button button--primary button--lg text-center")}>
               Daftar sekarang, GRATIS!
