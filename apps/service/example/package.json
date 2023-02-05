@@ -1,0 +1,27 @@
+{
+  "name": "@stasiunfile/example-service",
+  "version": "2.0.0",
+  "author": "CV ERZET ID <erzetindo@gmail.com>",
+  "homepage": "https://github.com/fahrizalm14/stasiunfile-monorepo",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "lint": "eslint -c '../../.eslintrc' --fix './src/**/*.ts'",
+    "prettier": "prettier --check 'src/**/*.{js,ts,jsx,tsx}'",
+    "test:pre": "rm -rf ./test/test.db",
+    "test:run": "vitest run --dir test",
+    "test": "npm run test:pre; npm run test:run",
+    "test:ignoreUnhandled": "npm run test:pre; npm run test:run -- --dangerouslyIgnoreUnhandledErrors"
+  },
+  "dependencies": {
+    "@stasiunfile/api": "^0.0.0"
+  }
+}
