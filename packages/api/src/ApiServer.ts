@@ -1,8 +1,8 @@
-import express, { RequestHandler } from "express";
+import express from "express";
 
 import { AppService } from "./AppService";
 
-interface IDatabase {
+export interface IDatabase {
   connect(): Promise<void>;
   disconnect(): Promise<void>;
   drop(): Promise<void>;
@@ -12,7 +12,7 @@ export default class ApiServer {
   private readonly server = express();
   constructor(
     private readonly appService: AppService<any>[],
-    private readonly middleware: RequestHandler[],
+    private readonly middleware: express.RequestHandler[],
     private readonly port: number,
     private readonly database?: IDatabase,
   ) {

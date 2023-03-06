@@ -13,17 +13,27 @@ class ExampleController extends BaseController<ExampleService> {
     // this.get = this.get.bind(this);
   }
 
-  register(): void {
+  private get() {
     // eslint-disable-next-line require-await
     const handler = async (_req: any, res: any) => {
       return this.render(res, 200, { data: await this.service.getNumber() });
     };
 
-    this.data.push({
+    this.add({
       handler,
       method: "get",
       path: "",
     });
+    // console.log(handler);
+    // this.data.push({
+    //   handler,
+    //   method: "get",
+    //   path: "",
+    // });
+  }
+
+  register(): void {
+    this.get();
   }
 }
 

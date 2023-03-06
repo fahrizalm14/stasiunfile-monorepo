@@ -12,6 +12,10 @@ export abstract class BaseController<T> {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   register(): void {}
 
+  protected add(controller: IController): void {
+    this.data.push(controller);
+  }
+
   protected render(res: Response, statusCode: number, data: object): Response {
     return res.status(statusCode).json(data);
   }

@@ -63,6 +63,7 @@
   },
   "workspaces": [
     "packages/*",
-    "apps/server"
+    "apps/server",
+    "apps/service/*"
   ]
 }
