@@ -35,5 +35,5 @@ ops/grafana/grafana.ini
 .rollup.cache
 
 #custom
-referance
-apps/server
+# referance
+# apps/server
